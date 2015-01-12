@@ -7,5 +7,20 @@
 }
 
 html, body {
-    padding: 0;
+    padding: 0;    
+    background: #fff;
+}
+
+._sup {
+    color: #e40880;
+    font-size: 62%;
+}
+
+.test_overlay {
+    position: absolute;
+    z-index: 999;
+    opacity: .3;
+    top:0;
+    left: 50%;
+    margin-left: -1285px; /* 2570/2=1285 */  
 }

@@ -2,9 +2,231 @@
 * header
 */
 
-.header {
+.header {    
+    overflow: hidden;
     position: relative;
     padding-top: 87px;
     height: 1515px;
     background-color: #f6f9fa;
+    & .container {
+        position: relative;
+    }
+    &_logo {
+        margin-bottom: 111px;
+    }
+    &_phone {
+        position: absolute;        
+        right: -3px;
+        top: -3px;
+        &__numbers {
+            color: #000;
+            font-family: "Proba Pro Regular";
+            font-size: 31px;
+            line-height: 31px;
+            font-weight: 400;            
+            margin-bottom: 10px;
+            letter-spacing: -.2px;
+        }
+        &__text {            
+            color: #000;
+            font-family: "Proba Pro ExtraLight";
+            font-size: 19px;
+            line-height: 19px;
+            font-weight: 200;
+            display: inline-block;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #dde0e1;
+            cursor: pointer;
+            position: relative;
+            left: 4px;
+            top: 2px;
+            &:hover {                
+                color: #07a2d6;
+                border-bottom-color: #07a2d6;
+            }
+        }
+    }
+    &_largedescription {
+        color: #000;
+        font-family: "Cinta Extralight";
+        font-size: 75px;
+        line-height: 70px;
+        font-weight: 200;
+        margin-bottom: 11px;
+    }
+    &_smalldescription {
+        color: #000;
+        font-family: "Proba Pro ExtraLight";
+        font-size: 30px;
+        line-height: 37px;
+        font-weight: 200;
+        margin-bottom: 46px;
+    }
+    &_divider_1 {
+        width: 562px;
+        height: 1px;
+        background: #dde0e1;
+        margin-bottom: 28px;
+    }
+    &_price_lagre {
+        color: #000;
+        font-family: "Proba Pro Thin";
+        font-size: 123px;
+        line-height: 123px;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        position: relative;
+        left: -5px;
+    }
+    &_price_small {
+        color: #000;
+        font-family: "Proba Pro ExtraLight";
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 200;
+        margin-bottom: 51px;
+        margin-left: 3px;
+        letter-spacing: 0.19px;
+    }
+    &_usagespheres {
+        position: relative;
+        width: 435px;
+        height: 185px;        
+        margin-bottom: 59px;
+        &__item {            
+            width: 215px;
+            &___number {
+                color: #07A2D6;
+                font-family: "Proba Pro Thin";
+                font-size: 82px;
+                line-height: 82px;
+                font-weight: 100;
+                text-transform: uppercase;  
+                float: left;
+                margin-right: 26px;
+            }
+            &___text {                
+                color: #000;
+                font-family: "Proba Pro Medium";
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                text-transform: uppercase;
+                position: relative;
+                top: 10px;
+            }
+        }
+        &__item._1 {
+            position: absolute;
+            left: -4px;
+            top: 0;
+        }
+        &__item._2 {
+            position: absolute;
+            left: 226px;
+            top: 0;
+        }
+        &__item._3 {
+            position: absolute;
+            left: 12px;
+            top: 107px;
+        }
+        &__item._4 {
+            position: absolute;
+            left: 240px;
+            top: 108px;
+        }
+    }
+    &_takeconsultation {        
+        position: relative;
+        width: 397px;
+        height: 90px;
+        background-color: transparent;        
+        background-image: url('/img/fig4.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        //background-size: 397px 90px;     
+        margin-bottom: 97px;
+        &__icon {
+            position: absolute;
+            left: 31px;
+            top: 29px;
+            width: 39px;
+            height: 39px;
+            background-image: url('/img/fig5.png');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            //background-size: 39px 39px;                      
+        }
+        &__text {
+            color: #FFF;
+            font-family: "Proba Pro Medium";
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 90px;
+            margin-left: 92px;
+        }
+    }
+    &_divider_2 {
+        width: 562px;
+        height: 1px;
+        background: #dde0e1;
+        margin-bottom: 29px;
+    }
+    &_jointdevelopment {
+        position: relative;
+        width: 500px;
+        height: 219px;
+        &__title {
+            color: #000;
+            font-family: "Proba Pro Regular";
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 23px;
+        }
+        &__company {            
+            &___img {
+                margin-bottom: 15px;
+            }            
+            &___text {
+                color: #000;
+                font-family: "Proba Pro ExtraLight";
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 200;
+            }
+        }
+//        &__company._1 {
+//            
+//        }
+        &__company._2 {
+            position: absolute;
+            left: 113px;
+            top: 48px;
+        }
+        &__description {
+            position: absolute;
+            left: 251px;
+            top: 44px;
+            color: #000;
+            font-family: "Proba Pro ExtraLight";
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 200;
+//            &___top {
+//                
+//            }
+            &___middle {
+                margin-top: 9px;
+            }
+        }
+    }
+    &_productimg {
+        position: absolute;
+        bottom: -6px;
+        right: -148px;
+    }
 }

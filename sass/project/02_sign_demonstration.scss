@@ -3,5 +3,109 @@
 */
 
 .sign_demonstration {
+    padding-top: 150px;
     position: relative;
+    height: 1477px;
+    &_title {
+        font-family: "Cinta Extralight";
+        font-size: 55px;
+        line-height: 57px;
+        font-weight: 200;
+        color: #000;
+        margin-left: -41px;
+    }
+    &_whatyouget {
+        margin-top: 52px;
+        &__title {
+            font-family: "Proba Pro Light";
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #000;
+            margin-left: -39px;
+            margin-bottom: 36px;
+        }
+        &__item {
+            margin-bottom: 36px;
+            margin-left: -24px;            
+            &:last-child {
+                margin-bottom: 50px;
+            }
+            &___img {
+                float: left;
+                margin-right: 30px;
+            }
+            &___img._3 {
+                position: relative;
+                top: 7px;
+            }
+            &___img._4 {
+                position: relative;
+                top: 21px;
+            }
+            &___img._5 {
+                position: relative;
+                top: 24px;
+            }
+            &___text {
+                color: #000;
+                font-family: "Proba Pro ExtraLight";
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: 200;
+            }
+            &___text._2 {
+                position: relative;
+                top: 5px;
+            }
+            &___text._3 {
+                position: relative;
+                top: 11px;
+            }
+            &___text._4 {
+                position: relative;
+                top: 17px;
+            }
+            &___text._5 {
+                position: relative;
+                top: 23px;
+                right: 3px;
+            }
+            
+        }
+    }
+    &_form {        
+        width: 439px;
+        height: 715px;
+        background-color: #EBF1F3;
+        background-color: rgba(235,241,243,.9);
+        margin-left: -40px;        
+        margin-top: 75px;
+        &__title {
+            color: #000;
+            font-family: "Proba Pro Regular";
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-bottom: 16px;          
+            padding-top: 39px;
+            margin-left: 40px;
+        }
+        &__texttop {
+            color: #000;
+            font-family: "Proba Pro ExtraLight";
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 200;
+            margin-left: -3px;
+            margin-left: 40px;
+        }
+        &__textbottom {
+            color: #68685E;
+            font-family: "Proba Pro ExtraLight";
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 200;
+        }
+    }
 }
