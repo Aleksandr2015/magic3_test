@@ -163,8 +163,28 @@ html, body {
 /*
 * header
 */
+.header {
+  position: relative;
+  padding-top: 87px;
+  height: 1515px;
+  background-color: #f6f9fa;
+}
+
 /*
-* footer
+* sign_demonstration
+*/
+.sign_demonstration {
+  position: relative;
+}
+
+/*
+* read_reviews
+*/
+/*
+* advantages
+*/
+/*
+* map
 */
 
 /*# sourceMappingURL=style.css.map */
