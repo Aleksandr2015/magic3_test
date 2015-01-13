@@ -17,7 +17,7 @@
     &_phone {
         position: absolute;        
         right: -3px;
-        top: -3px;
+        top: -3px;        
         &__numbers {
             color: #000;
             font-family: "Proba Pro Regular";
@@ -38,6 +38,7 @@
             border-bottom: 1px solid #dde0e1;
             cursor: pointer;
             position: relative;
+            @include transition(all .3s ease);
             left: 4px;
             top: 2px;
             &:hover {                
@@ -105,12 +106,19 @@
                 text-transform: uppercase;  
                 float: left;
                 margin-right: 26px;
+            }          
+            &___number._2 {
+                margin-right: 21px;
+            }
+            &___number._3 {
+                margin-right: 29px;
             }
             &___text {                
                 color: #000;
                 font-family: "Proba Pro Medium";
                 font-size: 16px;
                 line-height: 24px;
+                letter-spacing: 0.06em;
                 font-weight: 500;
                 text-transform: uppercase;
                 position: relative;
@@ -119,35 +127,39 @@
         }
         &__item._1 {
             position: absolute;
-            left: -4px;
-            top: 0;
+            left: -6px;
+            top: 4px;
         }
         &__item._2 {
             position: absolute;
             left: 226px;
-            top: 0;
+            top: 2px;
         }
         &__item._3 {
             position: absolute;
             left: 12px;
-            top: 107px;
+            top: 110px;
         }
         &__item._4 {
             position: absolute;
             left: 240px;
-            top: 108px;
-        }
+            top: 111px;
+        }        
     }
     &_takeconsultation {        
         position: relative;
         width: 397px;
         height: 90px;
-        background-color: transparent;        
-        background-image: url('/img/fig4.png');
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        //background-size: 397px 90px;     
+        background-color: #97BF0F;
+        border-radius: 50px;                
         margin-bottom: 97px;
+        cursor: pointer;
+        &:hover {
+            background-color: #8aae0e;            
+        }
+        &:active {
+            background-color: #76950c;            
+        }
         &__icon {
             position: absolute;
             left: 31px;
@@ -160,7 +172,7 @@
             //background-size: 39px 39px;                      
         }
         &__text {
-            color: #FFF;
+            color: #FFF !important;
             font-family: "Proba Pro Medium";
             font-size: 26px;
             font-weight: 500;
@@ -189,7 +201,7 @@
         }
         &__company {            
             &___img {
-                margin-bottom: 15px;
+                margin-bottom: 20px;
             }            
             &___text {
                 color: #000;
@@ -197,6 +209,7 @@
                 font-size: 15px;
                 line-height: 22px;
                 font-weight: 200;
+                letter-spacing: 0.01em;
             }
         }
 //        &__company._1 {
@@ -210,12 +223,13 @@
         &__description {
             position: absolute;
             left: 251px;
-            top: 44px;
+            top: 48px;
             color: #000;
             font-family: "Proba Pro ExtraLight";
             font-size: 16px;
             line-height: 25px;
             font-weight: 200;
+            letter-spacing: 0.005em;
 //            &___top {
 //                
 //            }

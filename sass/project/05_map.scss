@@ -3,5 +3,76 @@
 */
 
 .map {
-    
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    &_contacts {        
+        padding-top: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 290px;
+        height: 311px;    
+        margin-bottom: -311px;
+        background-image: url('/img/fig18.png');   
+        background-repeat: no-repeat;
+        background-position: center top;        
+        position: relative;
+        left: 3px;
+        z-index: 999;    
+        &__title {
+            color: #FFF;
+            font-family: "Proba Pro Medium";
+            font-size: 24px;
+            line-height: 69px;
+            font-weight: 500;
+            position: relative;
+            left: -3px;
+        }
+        &__address {
+            color: #FFF;
+            font-family: "Proba Pro ExtraLight";
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 200;
+        }
+        &__phone {
+            color: #FFF;
+            font-family: "Proba Pro Regular";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;    
+            padding-top: 10px;
+            position: relative;
+            left: -2px;
+            &___title {                
+                color: #FFF;
+                font-family: "Proba Pro ExtraLight";
+                font-size: 12px;
+                line-height: 25px;
+                letter-spacing: 0.14em;
+                font-weight: 200;
+                text-transform: uppercase;
+            }
+        }
+        &__mail {
+            color: #FFF;
+            font-family: "Proba Pro Regular";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;        
+            padding-top: 9px;
+            position: relative;
+            left: -5px;
+            &___title {
+                color: #FFF;
+                font-family: "Proba Pro ExtraLight";
+                line-height: 25px;
+                letter-spacing: 0.14em;
+                font-weight: 200;                            
+                font-size: 12px;
+                font-weight: 200;
+                text-transform: uppercase;
+            }
+        }
+    }
 }

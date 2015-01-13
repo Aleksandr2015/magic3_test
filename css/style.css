@@ -24,6 +24,14 @@
   padding: 0 !important;
 }
 
+.form-group {
+  margin: 0 !important;
+}
+
+label {
+  margin-bottom: 0;
+}
+
 /* Template-specific stuff
  *
  * Customizations just for the template; these are not necessary for anything
@@ -179,6 +187,11 @@ html, body {
   /* 2570/2=1285 */
 }
 
+._medium {
+  font-weight: 800 !important;
+  color: #000 !important;
+}
+
 /* Project styles */
 /*
 * header
@@ -221,6 +234,7 @@ html, body {
   border-bottom: 1px solid #dde0e1;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s ease;
   left: 4px;
   top: 2px;
 }
@@ -290,11 +304,18 @@ html, body {
   float: left;
   margin-right: 26px;
 }
+.header_usagespheres__item___number._2 {
+  margin-right: 21px;
+}
+.header_usagespheres__item___number._3 {
+  margin-right: 29px;
+}
 .header_usagespheres__item___text {
   color: #000;
   font-family: "Proba Pro Medium";
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.06em;
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
@@ -302,33 +323,38 @@ html, body {
 }
 .header_usagespheres__item._1 {
   position: absolute;
-  left: -4px;
-  top: 0;
+  left: -6px;
+  top: 4px;
 }
 .header_usagespheres__item._2 {
   position: absolute;
   left: 226px;
-  top: 0;
+  top: 2px;
 }
 .header_usagespheres__item._3 {
   position: absolute;
   left: 12px;
-  top: 107px;
+  top: 110px;
 }
 .header_usagespheres__item._4 {
   position: absolute;
   left: 240px;
-  top: 108px;
+  top: 111px;
 }
 .header_takeconsultation {
   position: relative;
   width: 397px;
   height: 90px;
-  background-color: transparent;
-  background-image: url("/img/fig4.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: #97BF0F;
+  border-radius: 50px;
   margin-bottom: 97px;
+  cursor: pointer;
+}
+.header_takeconsultation:hover {
+  background-color: #8aae0e;
+}
+.header_takeconsultation:active {
+  background-color: #76950c;
 }
 .header_takeconsultation__icon {
   position: absolute;
@@ -341,7 +367,7 @@ html, body {
   background-position: 0 0;
 }
 .header_takeconsultation__text {
-  color: #FFF;
+  color: #FFF !important;
   font-family: "Proba Pro Medium";
   font-size: 26px;
   font-weight: 500;
@@ -369,7 +395,7 @@ html, body {
   margin-bottom: 23px;
 }
 .header_jointdevelopment__company___img {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .header_jointdevelopment__company___text {
   color: #000;
@@ -377,6 +403,7 @@ html, body {
   font-size: 15px;
   line-height: 22px;
   font-weight: 200;
+  letter-spacing: 0.01em;
 }
 .header_jointdevelopment__company._2 {
   position: absolute;
@@ -386,12 +413,13 @@ html, body {
 .header_jointdevelopment__description {
   position: absolute;
   left: 251px;
-  top: 44px;
+  top: 48px;
   color: #000;
   font-family: "Proba Pro ExtraLight";
   font-size: 16px;
   line-height: 25px;
   font-weight: 200;
+  letter-spacing: 0.005em;
 }
 .header_jointdevelopment__description___middle {
   margin-top: 9px;
@@ -406,9 +434,13 @@ html, body {
 * sign_demonstration
 */
 .sign_demonstration {
+  overflow: hidden;
   padding-top: 150px;
   position: relative;
   height: 1477px;
+}
+.sign_demonstration .container {
+  position: relative;
 }
 .sign_demonstration_title {
   font-family: "Cinta Extralight";
@@ -459,23 +491,27 @@ html, body {
   font-size: 20px;
   line-height: 20px;
   font-weight: 200;
+  letter-spacing: 0.005em;
 }
 .sign_demonstration_whatyouget__item___text._2 {
   position: relative;
   top: 5px;
+  right: 2px;
 }
 .sign_demonstration_whatyouget__item___text._3 {
   position: relative;
-  top: 11px;
+  top: 12px;
+  right: 1px;
 }
 .sign_demonstration_whatyouget__item___text._4 {
   position: relative;
-  top: 17px;
+  top: 18px;
+  right: 1px;
 }
 .sign_demonstration_whatyouget__item___text._5 {
   position: relative;
-  top: 23px;
-  right: 3px;
+  top: 24px;
+  right: 4px;
 }
 .sign_demonstration_form {
   width: 439px;
@@ -484,6 +520,8 @@ html, body {
   background-color: rgba(235, 241, 243, 0.9);
   margin-left: -40px;
   margin-top: 75px;
+  position: relative;
+  z-index: 10;
 }
 .sign_demonstration_form__title {
   color: #000;
@@ -492,8 +530,9 @@ html, body {
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 16px;
-  padding-top: 39px;
-  margin-left: 40px;
+  padding-top: 37px;
+  margin-left: 38px;
+  letter-spacing: 0.005em;
 }
 .sign_demonstration_form__texttop {
   color: #000;
@@ -501,8 +540,8 @@ html, body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 200;
-  margin-left: -3px;
-  margin-left: 40px;
+  margin-left: 39px;
+  letter-spacing: -0.001em;
 }
 .sign_demonstration_form__textbottom {
   color: #68685E;
@@ -510,16 +549,296 @@ html, body {
   font-size: 15px;
   line-height: 22px;
   font-weight: 200;
+  margin-top: 22px;
+  margin-left: 46px;
+}
+.sign_demonstration_form form {
+  width: 357px;
+  margin-left: 40px;
+  margin-top: 34px;
+}
+.sign_demonstration_form form label {
+  color: #000;
+  font-family: "Proba Pro Regular";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.sign_demonstration_form form input {
+  height: 60px;
+  background-color: #FFF;
+  border-radius: 0;
+  border: 0;
+  margin-top: 16px;
+  margin-bottom: 14px;
+  padding: 22px;
+  color: #B8C4C8;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 20px;
+}
+.sign_demonstration_form_btn {
+  width: 356px;
+  height: 90px;
+  background-color: #97BF0F;
+  border-radius: 50px;
+  color: #FFF !important;
+  font-family: "Proba Pro Medium";
+  font-size: 32px;
+  line-height: 90px;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 0;
+}
+.sign_demonstration_form_btn:hover {
+  background-color: #8aae0e;
+}
+.sign_demonstration_form_btn:active {
+  background-color: #76950c;
+}
+.sign_demonstration_girlonbg {
+  position: absolute;
+  bottom: -65px;
+  right: -177px;
+  z-index: 1;
 }
 
 /*
 * read_reviews
 */
+.read_reviews {
+  height: 680px;
+}
+.read_reviews_title {
+  padding-top: 152px;
+  text-align: center;
+  font-family: "Cinta Extralight";
+  font-size: 55px;
+  line-height: 57px;
+  font-weight: 200;
+  color: #000;
+}
+.read_reviews_slider {
+  height: auto;
+}
+.read_reviews_slider__item {
+  text-align: center;
+}
+.read_reviews_slider__item___title {
+  color: #07A2D6;
+  font-family: "Proba Pro Light";
+  font-size: 34px;
+  line-height: 28px;
+  font-weight: 300;
+  padding-top: 71px;
+  position: relative;
+  left: -1px;
+}
+.read_reviews_slider__item___position {
+  color: #838383;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
+  padding-top: 15px;
+  position: relative;
+  left: -2px;
+}
+.read_reviews_slider__item___text {
+  color: #000;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 200;
+  padding-top: 25px;
+  letter-spacing: -0.005em;
+}
+.read_reviews .carousel-control.left {
+  opacity: 1;
+  width: 22px;
+  height: 70px;
+  background-image: url("/img/fig20.png");
+  background-repeat: no-repeat;
+  top: 48.4%;
+  left: -3px;
+}
+.read_reviews .carousel-control.left:hover {
+  background-image: url("/img/fig22.png");
+}
+.read_reviews .carousel-control.right {
+  opacity: 1;
+  width: 22px;
+  height: 70px;
+  background-image: url("/img/fig21.png");
+  background-repeat: no-repeat;
+  top: 48.4%;
+  right: 2px;
+}
+.read_reviews .carousel-control.right:hover {
+  background-image: url("/img/fig23.png");
+}
+.read_reviews .carousel-indicators {
+  bottom: -67px !important;
+}
+.read_reviews .carousel-indicators li {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #02A7DF;
+  margin-right: 2px;
+}
+.read_reviews .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  background-color: #02A7DF;
+}
+
 /*
 * advantages
 */
+.advantages {
+  height: 725px;
+  background-color: #f6f9fa;
+  position: relative;
+  overflow: hidden;
+}
+.advantages .container {
+  position: relative;
+}
+.advantages_title {
+  padding-top: 152px;
+  text-align: center;
+  font-family: "Cinta Extralight";
+  font-size: 55px;
+  line-height: 57px;
+  font-weight: 200;
+  color: #000;
+  position: relative;
+  left: 30px;
+}
+.advantages_text {
+  text-align: center;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 200;
+  color: #000;
+  padding-top: 48px;
+  letter-spacing: .1px;
+}
+.advantages_item {
+  width: 210px;
+  height: 210px;
+}
+.advantages_item__img {
+  margin-bottom: 30px;
+}
+.advantages_item__text {
+  color: #000;
+  font-family: "Proba Pro Medium";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+.advantages_item._1 {
+  position: absolute;
+  top: 366px;
+  left: 0px;
+}
+.advantages_item._2 {
+  position: absolute;
+  top: 366px;
+  left: 249px;
+}
+.advantages_item._3 {
+  position: absolute;
+  top: 366px;
+  right: 271px;
+}
+.advantages_item._4 {
+  position: absolute;
+  top: 366px;
+  right: 20px;
+}
+
 /*
 * map
 */
+.map {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.map_contacts {
+  padding-top: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 290px;
+  height: 311px;
+  margin-bottom: -311px;
+  background-image: url("/img/fig18.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  left: 3px;
+  z-index: 999;
+}
+.map_contacts__title {
+  color: #FFF;
+  font-family: "Proba Pro Medium";
+  font-size: 24px;
+  line-height: 69px;
+  font-weight: 500;
+  position: relative;
+  left: -3px;
+}
+.map_contacts__address {
+  color: #FFF;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 200;
+}
+.map_contacts__phone {
+  color: #FFF;
+  font-family: "Proba Pro Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 10px;
+  position: relative;
+  left: -2px;
+}
+.map_contacts__phone___title {
+  color: #FFF;
+  font-family: "Proba Pro ExtraLight";
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.14em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.map_contacts__mail {
+  color: #FFF;
+  font-family: "Proba Pro Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 9px;
+  position: relative;
+  left: -5px;
+}
+.map_contacts__mail___title {
+  color: #FFF;
+  font-family: "Proba Pro ExtraLight";
+  line-height: 25px;
+  letter-spacing: 0.14em;
+  font-weight: 200;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */

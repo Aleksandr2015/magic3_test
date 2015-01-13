@@ -18,11 +18,11 @@
     <!--[if IE]>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->    
+    <![endif]-->        
 </head>
 <body> 
     
-    <img src="img/test_overlay.jpg" alt="" class="test_overlay">
+<!--    <img src="img/test_overlay.jpg" alt="" class="test_overlay">-->
     
     <!--[if lt IE 9]>
     <p class="browsehappy">Вы используете <strong>устаревшую</strong> версию браузера, поэтому страница может работать некорректно. Обновить браузер можно <a href="http://browsehappy.com/">по этой ссылке</a> или перейти на сайт http://browsehappy.com</p>
@@ -80,7 +80,7 @@
                         </div>
                         <!-- usage spheres item 2 -->
                         <div class="header_usagespheres__item _2">
-                            <div class="header_usagespheres__item___number">
+                            <div class="header_usagespheres__item___number _2">
                                 12
                             </div>
                             <div class="header_usagespheres__item___text">
@@ -211,7 +211,21 @@
                     и наш менеджер свяжется с вами в течение <br> 
                     5 минут для уточнения времени демонстрации.
                 </div>
-                форма тут
+                <form action="/" method="">
+                  <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Иван">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Контактный телефон</label>
+                    <input type="text" class="form-control _medium" id="phone" placeholder="+7">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Удобная дата и время</label>
+                    <input type="text" class="form-control" id="name" placeholder="Напишите удобную дату и время">
+                  </div>
+                  <button type="submit" class="btn sign_demonstration_form_btn">Записаться</button>
+                </form>
                 <div class="sign_demonstration_form__textbottom">
                     Демонстрация осуществляется в Москве и Нижнем <br>
                     Новгороде на базе косметологической клиники <br>
@@ -220,7 +234,7 @@
                 </div>
             </div>
             <!-- girl on bg -->
-            <img class="header_productimg" src="" alt="">
+            <img class="sign_demonstration_girlonbg" src="img/fig13.png" alt="">
         </div><!-- container / -->
     </section>
     <!-- sign_demonstration / end -->    
@@ -230,11 +244,80 @@
         <div class="container">
             <div class="read_reviews_title">
                 Почитайте отзывы тех, кто уже <br>
-                использует MAGIC<sup class="read_reviews_sup">3</sup>
-            </div>
-            <div class="read_reviews_slider">
-                тут слайдер
-            </div>
+                использует MAGIC<sup class="_sup">3</sup>
+            </div>            
+            <div id="read_reviews_slider" class="carousel slide read_reviews_slider" data-ride="carousel" data-interval="false">
+                <!-- carousel-indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#read_reviews_slider" data-slide-to="0"></li>
+                    <li data-target="#read_reviews_slider" data-slide-to="1" class="active"></li>
+                    <li data-target="#read_reviews_slider" data-slide-to="2"></li>
+                    <li data-target="#read_reviews_slider" data-slide-to="3"></li>
+                </ol><!-- carousel-indicators  / -- >
+                <!-- Wrapper for slides - carousel-inner -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- item 1 -->
+                    <div class="item read_reviews_slider__item">
+                        <div class="read_reviews_slider__item___title">
+                            Сергей Константинопольский
+                        </div>
+                        <div class="read_reviews_slider__item___position">
+                            Хирург-косметолог
+                        </div>
+                        <div class="read_reviews_slider__item___text">
+                            Позиционирование на рынке амбивалентно. Итак, ясно, что высокая информативность <br>
+                            спонтанно притягивает экспериментальный имидж. Дело в том, что креативная <br>
+                            концепция поддерживает рыночный метод изучения рынка, расширяя долю рынка.
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="item read_reviews_slider__item active">
+                      <div class="read_reviews_slider__item___title">
+                            Сергей Константинопольский
+                        </div>
+                        <div class="read_reviews_slider__item___position">
+                            Хирург-косметолог
+                        </div>
+                        <div class="read_reviews_slider__item___text">
+                            Позиционирование на рынке амбивалентно. Итак, ясно, что высокая информативность <br>
+                            спонтанно притягивает экспериментальный имидж. Дело в том, что креативная <br>
+                            концепция поддерживает рыночный метод изучения рынка, расширяя долю рынка.
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="item read_reviews_slider__item">
+                      <div class="read_reviews_slider__item___title">
+                            Сергей Константинопольский
+                        </div>
+                        <div class="read_reviews_slider__item___position">
+                            Хирург-косметолог
+                        </div>
+                        <div class="read_reviews_slider__item___text">
+                            Позиционирование на рынке амбивалентно. Итак, ясно, что высокая информативность <br>
+                            спонтанно притягивает экспериментальный имидж. Дело в том, что креативная <br>
+                            концепция поддерживает рыночный метод изучения рынка, расширяя долю рынка.
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="item read_reviews_slider__item">
+                      <div class="read_reviews_slider__item___title">
+                            Сергей Константинопольский
+                        </div>
+                        <div class="read_reviews_slider__item___position">
+                            Хирург-косметолог
+                        </div>
+                        <div class="read_reviews_slider__item___text">
+                            Позиционирование на рынке амбивалентно. Итак, ясно, что высокая информативность <br>
+                            спонтанно притягивает экспериментальный имидж. Дело в том, что креативная <br>
+                            концепция поддерживает рыночный метод изучения рынка, расширяя долю рынка.
+                        </div>
+                    </div>
+                  </div><!-- carousel-inner  / -->
+                  <!-- carousel-controls -->
+                  <a class="left carousel-control" href="#read_reviews_slider" role="button" data-slide="prev"></a>
+                  <a class="right carousel-control" href="#read_reviews_slider" role="button" data-slide="next"></a>
+                  <!-- carousel-controls -- / >
+            </div>            
         </div><!-- container / -->
     </section>
     <!-- read_reviews / end --> 
@@ -250,31 +333,31 @@
             <div class="advantages_text">
                 Благодаря новому инженерному решению и передовым технологиям, MAGIC<sup class="_sup">3</sup> <br>
                 лишен недостатков других лазеров
-            </div>
+            </div>            
             <!-- item1 -->
-            <div class="advantages_item">
-                <img class="advantages_item__img" src="" alt="">
+            <div class="advantages_item _1">
+                <img class="advantages_item__img" src="img/fig14.png" alt="">
                 <div class="advantages_item__text">
                     Без боли
                 </div>
             </div>
             <!-- item2 -->
-            <div class="advantages_item">
-                <img class="advantages_item__img" src="" alt="">
+            <div class="advantages_item _2">
+                <img class="advantages_item__img" src="img/fig15.png" alt="">
                 <div class="advantages_item__text">
                     Без раздражения
                 </div>
             </div>
             <!-- item3 -->
-            <div class="advantages_item">
-                <img class="advantages_item__img" src="" alt="">
+            <div class="advantages_item _3">
+                <img class="advantages_item__img" src="img/fig16.png" alt="">
                 <div class="advantages_item__text">
                     Без перегрева
                 </div>
             </div>
             <!-- item4 -->
-            <div class="advantages_item">
-                <img class="advantages_item__img" src="" alt="">
+            <div class="advantages_item _4">
+                <img class="advantages_item__img" src="img/fig17.png" alt="">
                 <div class="advantages_item__text">
                     Легкие манипулы
                 </div>
@@ -284,8 +367,7 @@
     <!-- advantages / end --> 
     
     <!-- map / start -->
-    <section class="map">
-        <div class="container">
+    <section class="map">        
             <div class="map_contacts">
                 <!-- title -->
                 <div class="map_contacts__title">
@@ -298,23 +380,22 @@
                 </div>
                 <!-- phone -->
                 <div class="map_contacts__phone">
-                    <div class="map_contacts__phone__title">
+                    <div class="map_contacts__phone___title">
                         телефон
                     </div>
                     8 (800) 456-78-78
                 </div>
                 <!-- mail -->
                 <div class="map_contacts__mail">
-                    <div class="map_contacts__mail__title">
+                    <div class="map_contacts__mail___title">
                         E-mail
                     </div>
                     magic3@mail.ru
                 </div>
-            </div><!-- map_contacts /  -->
-            <!-- map / start -->
-            карта
-            <!-- map / end -->
-        </div><!-- container / -->
+            </div><!-- map_contacts /  -->                    
+        <!-- map / start -->                        
+        <div id ="mapid-7ccab96c-8066-4cd0-8add-ea89324120a9"></div>
+        <!-- map / end -->
     </section>
     <!-- map / end --> 
         
@@ -324,6 +405,8 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- Bootstrap CDN - Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    
+    <!-- google maps scripts -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-tyFbQf_9NMMCJDh3fpfXakC2djXbS04&sensor=false"></script>
+    <script type="text/javascript" src="http://www.map-generator.org/map/iframejs/7ccab96c-8066-4cd0-8add-ea89324120a9?key=AIzaSyA-tyFbQf_9NMMCJDh3fpfXakC2djXbS04&width=100%&height=600px"></script>
 </body>
 </html>

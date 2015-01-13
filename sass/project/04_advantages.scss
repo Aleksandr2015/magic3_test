@@ -3,5 +3,68 @@
 */
 
 .advantages {
-    
+    height: 725px;
+    background-color: #f6f9fa;
+    position: relative;
+    overflow: hidden;
+    & .container {
+        position: relative;
+    }
+    &_title {
+        padding-top: 152px;
+        text-align: center;
+        font-family: "Cinta Extralight";
+        font-size: 55px;
+        line-height: 57px;
+        font-weight: 200;
+        color: #000;
+        position: relative;
+        left: 30px;
+    }
+    &_text {        
+        text-align: center;
+        font-family: "Proba Pro ExtraLight";
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 200;
+        color: #000;   
+        padding-top: 48px;
+        letter-spacing: .1px;
+    }
+    &_item {
+        width: 210px;
+        height: 210px;
+        &__img {
+            margin-bottom: 30px;
+        }
+        &__text {
+            color: #000;
+            font-family: "Proba Pro Medium";
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            font-weight: 500;
+        }
+    }
+    &_item._1 {
+        position: absolute;
+        top: 366px;
+        left: 0px;
+    }
+    &_item._2 {
+        position: absolute;
+        top: 366px;
+        left: 249px;
+    }
+    &_item._3 {
+        position: absolute;
+        top: 366px;
+        right: 271px;
+    }
+    &_item._4 {
+        position: absolute;
+        top: 366px;
+        right: 20px;
+    }
 }
+

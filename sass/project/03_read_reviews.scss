@@ -3,5 +3,90 @@
 */
 
 .read_reviews {
-    
+    height: 680px;
+    &_title {
+        padding-top: 152px;
+        text-align: center;
+        font-family: "Cinta Extralight";
+        font-size: 55px;
+        line-height: 57px;
+        font-weight: 200;
+        color: #000;        
+    }
+    &_slider {
+        height: auto;
+        &__item {
+            text-align: center;
+            &___title {                
+                color: #07A2D6;
+                font-family: "Proba Pro Light";
+                font-size: 34px;
+                line-height: 28px;
+//                letter-spacing: 0.01em;
+                font-weight: 300; 
+                padding-top: 71px;
+                position: relative;
+                left: -1px;
+            }
+            &___position {                
+                color: #838383;
+                font-family: "Proba Pro ExtraLight";
+                font-size: 24px;
+                line-height: 28px;
+//                letter-spacing: 0.01em;
+                font-weight: 200;              
+                padding-top: 15px;
+                position: relative;
+                left: -2px;
+            }
+            &___text {
+                color: #000;
+                font-family: "Proba Pro ExtraLight";
+                font-size: 22px;
+                line-height: 30px;
+                font-weight: 200;
+                padding-top: 25px;
+                letter-spacing: -0.005em;
+            }
+        }
+    }
+    & .carousel-control.left {
+        opacity: 1;
+        width: 22px;
+        height: 70px;
+        background-image: url('/img/fig20.png');
+        background-repeat: no-repeat;
+        top:48.4%;
+        left: -3px;
+        &:hover {
+            background-image: url('/img/fig22.png');
+        }
+        
+    }
+    & .carousel-control.right {
+        opacity: 1;
+        width: 22px;
+        height: 70px;
+        background-image: url('/img/fig21.png');
+        background-repeat: no-repeat;
+        top:48.4%;
+        right: 2px;
+        &:hover {
+            background-image: url('/img/fig23.png');
+        }
+    }
+    & .carousel-indicators {
+        bottom: -67px !important;
+    }
+    & .carousel-indicators li {
+        width: 9px;
+        height: 9px;
+        border: 1px solid #02A7DF;
+        margin-right: 2px;
+    }
+    & .carousel-indicators .active {
+        width: 10px;
+        height: 10px;
+        background-color: #02A7DF;
+    }
 }

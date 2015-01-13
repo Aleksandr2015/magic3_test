@@ -3,9 +3,13 @@
 */
 
 .sign_demonstration {
+    overflow: hidden;
     padding-top: 150px;
     position: relative;
     height: 1477px;
+    & .container {
+        position: relative;
+    }
     &_title {
         font-family: "Cinta Extralight";
         font-size: 55px;
@@ -53,23 +57,27 @@
                 font-size: 20px;
                 line-height: 20px;
                 font-weight: 200;
+                letter-spacing: 0.005em;
             }
             &___text._2 {
                 position: relative;
                 top: 5px;
+                right: 2px;
             }
             &___text._3 {
                 position: relative;
-                top: 11px;
+                top: 12px;
+                right: 1px;
             }
             &___text._4 {
                 position: relative;
-                top: 17px;
+                top: 18px;
+                right: 1px;
             }
             &___text._5 {
                 position: relative;
-                top: 23px;
-                right: 3px;
+                top: 24px;
+                right: 4px;
             }
             
         }
@@ -81,6 +89,8 @@
         background-color: rgba(235,241,243,.9);
         margin-left: -40px;        
         margin-top: 75px;
+        position: relative;
+        z-index: 10;
         &__title {
             color: #000;
             font-family: "Proba Pro Regular";
@@ -88,17 +98,18 @@
             line-height: 24px;
             font-weight: 400;
             margin-bottom: 16px;          
-            padding-top: 39px;
-            margin-left: 40px;
+            padding-top: 37px;
+            margin-left: 38px;
+            letter-spacing: 0.005em;
         }
         &__texttop {
             color: #000;
             font-family: "Proba Pro ExtraLight";
             font-size: 18px;
             line-height: 22px;
-            font-weight: 200;
-            margin-left: -3px;
-            margin-left: 40px;
+            font-weight: 200;            
+            margin-left: 39px;
+            letter-spacing: -0.001em;
         }
         &__textbottom {
             color: #68685E;
@@ -106,6 +117,60 @@
             font-size: 15px;
             line-height: 22px;
             font-weight: 200;
+            margin-top: 22px;
+            margin-left: 46px;
+        }        
+    }
+    &_form form {
+        width: 357px;
+        margin-left: 40px;
+        margin-top: 34px;
+    }
+    &_form form label {
+        color: #000;
+        font-family: "Proba Pro Regular";
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+    }
+    &_form form input {        
+        height: 60px;
+        background-color: #FFF;
+        border-radius: 0;
+        border: 0;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        padding: 22px;
+        color: #B8C4C8;
+        font-family: "Proba Pro ExtraLight";
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    &_form_btn {        
+        width: 356px;
+        height: 90px;
+        background-color: #97BF0F;
+        border-radius: 50px;
+        color: #FFF !important;
+        font-family: "Proba Pro Medium";
+        font-size: 32px;
+        line-height: 90px;
+        font-weight: 500;
+        margin-top: 8px;
+        padding: 0;
+        &:hover {
+            background-color: #8aae0e;
         }
+        &:active {
+            background-color: #76950c;
+        }
+    }
+    &_girlonbg {
+        position: absolute;
+        bottom: -65px;
+        right: -177px;
+        z-index: 1;
     }
 }
